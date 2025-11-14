@@ -1,0 +1,68 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.navbar-brand img {
+      width:40px;
+}
+.navbar {
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      animation: slideDown 2s ease-in-out forwards; /* Animation applied */
+    }
+    /* Keyframes for slide-down animation */
+    @keyframes slideDown {
+      0% {
+        transform: translateY(-100%); /* Start above the viewport */
+        opacity: 0; /* Optional: fade in */
+      }
+      100% {
+        transform: translateY(0); /* End at normal position */
+        opacity: 1; /* Fully visible */
+      }
+    }
+    
+/* Ensure carousel has a visible height */
+.carousel-item {
+  height: 800px; /* Adjust as needed */
+}
+
+.carousel-item svg {
+  width: 100%;
+  height: 100%; /* Ensure SVG fills the carousel */
+}
+
+/* Optional: Center marketing section text */
+.marketing .col-lg-4 {
+  text-align: center;
+}
+
+/* Add spacing between carousel and marketing section */
+.container.marketing {
+  margin-top: 40px; /* Adds gap between carousel and marketing */
+}
+
+/* Sticky footer styles */
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure body takes at least full viewport height */
+  margin: 0;
+}
+
+main {
+  flex: 1 0 auto; /* Main content grows to fill space */
+  padding-top: 70px; /* Prevent navbar overlap */
+}
+
+footer {
+  flex-shrink: 0; /* Footer doesn’t shrink */
+  width: 100%;
+  background-color: #f8f9fa; /* Match navbar bg-light color */
+  padding: 1rem 0; /* Consistent padding */
+}
+
+
